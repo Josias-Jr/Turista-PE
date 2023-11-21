@@ -1,4 +1,5 @@
 <?php
+
 $servername = "localhost";
 $username = "root";
 $password = "Francisca27032002";
@@ -6,21 +7,25 @@ $dbname = "turismo";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+// Verificar a conexão
 if ($conn->connect_error) {
-    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-$nome = $_POST['nome'];
+// Obter dados do formulário
+$name = $_POST['name'];
 $email = $_POST['email'];
-$message = $_POST['message'];
+$password = $_POST['password'];
 
-$sql = "INSERT INTO cliente (nome, email, mensagem) VALUES ('$nome', '$email', '$message')";
+$sql = "INSERT INTO sua_tabela (nome, email, senha) VALUES ('$name', '$email', '$password')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Dados do formulário inseridos com sucesso no banco de dados.";
+    echo "Mensagem enviada com sucesso!";
 } else {
-    echo "Erro ao inserir os dados no banco de dados: " . $conn->error;
+    echo "Erro ao enviar mensagem: " . $conn->error;
 }
+
+echo "<p>Sua senha é: $password</p>";
 
 $conn->close();
 ?>

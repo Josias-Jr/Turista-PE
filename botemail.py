@@ -35,8 +35,8 @@ for email in emails:
         <body>
             <p>Olá,</p>
             <p>Você já imaginou explorar os destinos mais incríveis do mundo com facilidade e economia? Com o Turismundo, tornamos seus sonhos de viagem realidade...</p>
-            <p><img src="URL_DA_IMAGEM" alt="Descrição da Imagem"></p>
-            <p>Para mais informações, visite nosso <a href="URL_DO_SITE">site</a>.</p>
+            <p><img src="https://raw.githubusercontent.com/Josias-Jr/Turista-PE/4c38d1097785a070491f8c0ad4b2f8872b4f273d/image/plano%20de%20fundo.png" alt="Praia"></p>
+            <p>Para mais informações, visite nosso <a href="https://josias-jr.github.io/Turista-PE/">site</a>.</p>
             <p>Atenciosamente,</p>
             <p>Equipe Turismundo</p>
         </body>
