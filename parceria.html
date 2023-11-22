@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Parceiros</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-image: url(image/6345959.jpg);
+      background-size: cover;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      text-align: center; /* Adicionado para centralizar os itens do formulário */
+      margin-top: 200px;
+      border: 2px solid #187fe0; /* Adicionado para criar uma borda ao redor do formulário */
+      padding: 20px;
+      border-radius: 15px;
+      background-color: #fff;
+    }
+    label {
+        text-align: left;
+        padding-left: 95px;
+    }
+    input, textarea {
+      display: block;
+      margin: 10px auto;
+      border: 1px solid #187fe0;
+      border-radius: 5px; /* Adicionado para arredondar as bordas dos inputs */
+      padding: 8px;
+      width: 70%; /* Faz com que os inputs ocupem toda a largura do contêiner pai */
+      box-sizing: border-box; /* Inclui a largura da borda e o preenchimento no cálculo do tamanho total */
+    }
+    h2 {
+      text-align: center;
+    }
+    label, input, textarea {
+      display: block;
+      margin: 10px auto; /* Adicionado para centralizar os itens do formulário */
+    }
+    button {
+      margin-top: 10px; /* Adicionado para separar o botão do último campo */
+      border-radius: 5px solid #187fe0;
+    }
+  </style>
+</head>
+<body>
+  
+  <form action="/processar-formulario" method="post">
+    <h2>Cadastro de Parceiros</h2>
+    <label for="nome">Nome da Empresa:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone">
+
+    <label for="website">Website:</label>
+    <input type="text" id="website" name="website">
+
+    <label for="descricao">Breve Descrição da Empresa:</label>
+    <textarea id="descricao" name="descricao" rows="4"></textarea>
+
+    <button type="submit">Cadastrar Empresa</button>
+  </form>
+</body>
+</html>
