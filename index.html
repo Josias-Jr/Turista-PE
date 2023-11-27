@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Turista PE</title>
+  <link rel="shortcut icon" href="image/umbrella-beach-solid.ico"/>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
   
 </head>
 <body>
@@ -12,13 +18,13 @@
       <h1>Turista PE</h1>
     </div>
     <nav>
-      <ul>
-        <li><a href="#inicio" class="menu-item">Início</a></li>
-        <li><a href="#sobre" class="menu-item">Sobre</a></li>
-        <li><a href="#roteiros" class="menu-item">Roteiros</a></li>
-        <li><a href="#cadastro" class="menu-item">Cadastro</a></li>
-        <li><a href= "parceria.html" class="menu-item">Parcerias</a></li>
-      </ul>
+      <div class="itens-menu">
+        <a href="#inicio" class="menu-item">Início</a>
+        <a href="#sobre" class="menu-item">Sobre</a>
+        <a href="#roteiros" class="menu-item">Roteiros</a>
+        <a href="#cadastro" class="menu-item">Cadastro</a>
+        <a href= "parceria.html" class="menu-item-parceria" target="_blank">Parcerias</a>
+      </div>
     </nav>
   </header>
   <main>
@@ -96,9 +102,10 @@
     </section>
 
     <section id="cadastro" class="contact-section">
+      <h2 class="section-title" style="margin-bottom: 80px;">Cadastre-se</h2>
+
       <div class="contact-container">
         <div class="contact-form">
-          <h2 class="section-title">Cadastre-se</h2>
           <form action="envia.php" method="post">
             <input type="text" id="name" name="name" placeholder="Nome" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
