@@ -7,7 +7,7 @@ conexao = mysql.connector.connect(
     host='localhost',
     database='turismo',
     user='root',
-    password='Francisca27032002'
+    password=''
 )
 
 cursor = conexao.cursor()
