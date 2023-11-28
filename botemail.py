@@ -20,7 +20,7 @@ cursor.close()
 conexao.close()
 
 remetente = 'turistape23@gmail.com'
-senha = 'drueznpymuigzuqv'
+senha = ''
 
 for email in emails:
     destinatario = email[0]
